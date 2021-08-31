@@ -3,23 +3,49 @@ h1 {
   padding-bottom: 50px;
 }
 div {
-  box-sizing: border-box;
+  border: 3px solid black;
+  margin: 100px auto;
+}
+#large {
   width: 500px;
   height: 500px;
-  border: 3px solid black;
-  margin: auto;
+  background-color: red;
 }
-div div {
-  box-sizing: border-box;
+#medium {
   width: 300px;
   height: 300px;
-  border: 3px solid black;
-  margin: 100px auto;
+  background-color: blue;
 }
-div div div {
-  box-sizing: border-box;
+#small {
   width: 100px;
   height: 100px;
-  border: 3px solid black;
-  margin: 100px auto;
+  background-color: white;
+}
+td {
+  width: 100px;
+  height: 100px;
+}
+table {
+  margin: auto;
+}
+.top {
+  border-top: 3px solid black;
+}
+.left {
+  border-left: 3px solid black;
+}
+.right {
+  border-right: 3px solid black;
+}
+.bottom {
+  border-bottom: 3px solid black;
+}
+#one, #five, td:nth-of-type(1), td:nth-of-type(5) {
+  background-color: red;
+}
+#two, #four, #three {
+  background-color: blue;
+}
+.top.bottom.left.right {
+  background-color: white;
 }
